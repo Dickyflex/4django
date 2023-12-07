@@ -131,3 +131,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Login Behavior:
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
+
+# Azure CSRF verification faild error: Fix
+CSRF_TRUSTED_ORIGINS = ['https://'+ os.environ['*']]
