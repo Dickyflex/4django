@@ -133,4 +133,4 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
 # Azure CSRF verification faild error: Fix
-CSRF_TRUSTED_ORIGINS = ['https://'+ os.environ['*']]
+CSRF_TRUSTED_ORIGINS = ['https://'+ os.environ['ajsample1.azurewebsites.net']]

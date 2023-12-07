@@ -1,7 +1,10 @@
 # 4django
 ---
-project-level > settings.py
+## project-level/settings.py
 ALLOWED_HOST = ['*']
+
+<!-- Azure CSRF verification faild error: Fix -->
+CSRF_TRUSTED_ORIGINS = ['https://'+ os.environ['ajsample1.azurewebsites.net']]
 
 ---
 requirements.txt:
